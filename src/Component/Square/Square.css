@@ -1,0 +1,103 @@
+.squar_container {
+  height: 620px;
+  width: 58%;
+  border-radius: 12px;
+  border: 1px solid #2b3139;
+  padding: 10px;
+}
+.heading_btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0 10px;
+}
+.heading_btn > h3 {
+  color: #fff;
+  font-size: 24px;
+}
+.heading_btn > button {
+  all: unset;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.scroller {
+  height: 560px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.follow_list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 70px;
+  width: 100%;
+  padding: 0 10px;
+  border-radius: 8px;
+  position: relative;
+}
+.follow_list:hover {
+  background-color: #0c0c0cd7;
+}
+.title_para {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title_para > h4 {
+  color: #fff;
+  font-size: 17px;
+  margin: 2px 0;
+  cursor: pointer;
+}
+.title_para > p {
+  color: #848e9c;
+  font-size: 12px;
+  margin: 3px 0 0 0;
+}
+.button > button {
+  all: unset;
+  padding: 2px 22px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #252a31;
+  border-radius: 6px;
+  font-size: 14px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%) !important;
+}
+.img {
+  position: relative;
+}
+.follower_img {
+  height: 40px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.tickmark {
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  height: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.button > button:hover {
+  background-color: #20242b;
+}
+@media (max-width: 1023px) {
+  .squar_container {
+    width: 100%;
+    height: 1465px;
+    border: none;
+  }
+  .scroller {
+    height: 560px;
+    overflow: visible !important;
+    overflow-y: scroll;
+  }
+  .follow_list:hover {
+    background-color: #090d1100;
+  }
+}

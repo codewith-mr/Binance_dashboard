@@ -1,0 +1,254 @@
+.marketdiscover_body {
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #2b3139;
+  margin: 29px 0 0 0;
+  padding: 20px 0;
+}
+.marketdiscover {
+  display: flex;
+  flex-direction: column;
+}
+.main_btn {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0 20px;
+  position: relative;
+}
+.main_btn :first-child {
+  display: flex;
+  gap: 25px;
+}
+.main_btn :first-child > button {
+  all: unset;
+  color: #848e9c;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.main_btn :first-child > button:focus {
+  color: #fff;
+}
+.main_btn :first-child > button:hover {
+  color: #fff;
+}
+.main_btn > span > span {
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+/* ========  mini_btn ========== */
+
+.mini_btn {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 0 20px;
+  margin: 10px 0 0 0;
+}
+
+.mini_btn > button {
+  all: unset;
+  color: #848e9c;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+.mini_btn > button:focus {
+  color: #fff;
+}
+.mini_btn > button:hover {
+  color: #fff;
+}
+.mini_btn > button:focus::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  border-bottom: 3px solid #fcd535;
+}
+.content {
+  margin: 10px 0 0 0;
+  padding: 0 10px;
+}
+.content > span {
+  display: flex;
+  align-items: center;
+  color: #848e9c;
+  padding: 20px 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.content > span > :first-child {
+  width: 20%;
+  cursor: pointer;
+}
+.content > span > :nth-child(2),
+.content > span > :nth-child(3),
+.content > span > :nth-child(4),
+.content > span > :nth-child(5) {
+  width: 20%;
+  text-align: end;
+  cursor: pointer;
+}
+.content > span > :first-child:hover,
+.content > span > :nth-child(2):hover,
+.content > span > :nth-child(3):hover,
+.content > span > :nth-child(4):hover,
+.content > span > :nth-child(5):hover {
+  color: #fff;
+}
+
+/* ========= lidting_content ========= */
+.content > .listComponent {
+  background-color: yellowgreen !important;
+}
+/* ====== list ========= */
+
+.list {
+  height: 70px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.list:hover {
+  background-color: #0c0c0cd7 !important;
+}
+.list > span {
+  width: 20% !important;
+}
+.list :first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.list span > span {
+  display: flex;
+  flex-direction: column;
+  align-items: start !important;
+}
+.list > span > span > h5,
+.list > span > h5 {
+  color: #fff;
+  font-size: 16px;
+}
+.list > span > span > h6,
+.list > span > h6 {
+  color: #848e9c;
+  font-size: 14px;
+  font-weight: 400;
+}
+.list :nth-child(2),
+.list :nth-child(3),
+.list :nth-child(4),
+.list :nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.list :nth-child(3) h5:hover {
+  color: #f0b90b;
+}
+
+.list :nth-child(4) > h6 {
+  color: #f6465d;
+}
+.list :nth-child(5) > h6 {
+  color: #f0b90b;
+}
+
+/* ====== list - 2 ========= */
+
+.list_2 {
+  height: 70px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.list_2:hover {
+  background-color: #090d11 !important;
+}
+.list_2 > span {
+  width: 20% !important;
+}
+.list_2 :first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.list_2 span > span {
+  display: flex;
+  flex-direction: column;
+  align-items: start !important;
+}
+.list_2 > span > span > h5,
+.list_2 > span > h5 {
+  color: #fff;
+  font-size: 16px;
+}
+.list_2 > span > span > h6,
+.list_2 > span > h6 {
+  color: #848e9c;
+  font-size: 14px;
+  font-weight: 400;
+}
+.list_2 :nth-child(2),
+.list_2 :nth-child(3),
+.list_2 :nth-child(4),
+.list_2 :nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.list_2 :nth-child(3) h5:hover {
+  color: #f0b90b;
+}
+
+.list_2 :nth-child(4) > h6 {
+  color: #0ecb81;
+}
+.list_2 :nth-child(5) > h6 {
+  color: #f0b90b;
+}
+@media (max-width: 1023px) {
+  .marketdiscover_body {
+    border: none;
+  }
+}
+@media (max-width: 767px) {
+  .content > span :nth-child(3),
+  .content > span :nth-child(4),
+  .content > span :nth-child(5) {
+    display: none;
+  }
+  .content > span {
+    justify-content: space-between;
+  }
+  .list :nth-child(3),
+  .list :nth-child(4),
+  .list :nth-child(5),
+  .list_2 :nth-child(3),
+  .list_2 :nth-child(4),
+  .list_2 :nth-child(5) {
+    display: none !important;
+  }
+  .list,
+  .list_2 {
+    justify-content: space-between;
+  }
+}

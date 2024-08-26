@@ -1,0 +1,5 @@
+@media (max-width: 1023px) {
+  .graph {
+    width: 300px !important;
+  }
+}

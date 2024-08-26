@@ -1,0 +1,79 @@
+.slide {
+  min-height: 100vh;
+  min-width: 218px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1px;
+  padding: 6px 0 0 0;
+  position: relative;
+  margin: 4.5rem 0 0 0;
+}
+.slide > p > button {
+  all: unset;
+  color: #848e9c;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  padding: 16px 0px 16px 30px;
+  width: 100%;
+  cursor: pointer;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+}
+.link_btn > :nth-child(2) {
+  position: absolute;
+  right: 0px;
+}
+.third_party_dropDown {
+  position: absolute;
+  right: 0 !important;
+}
+.dropdown-options {
+  padding: 0 0 12px 0;
+}
+.dropdown-options > button {
+  all: unset;
+  color: #848e9c !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  padding: 25px 0px 25px 55px;
+  width: 88%;
+  cursor: pointer;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.slide > p > button:hover,
+.dropdown-options > button:hover {
+  background-color: #2b3139;
+}
+.slide > p > button:focus {
+  background-color: #2b3139 !important;
+  color: #eaecef !important;
+}
+.dropdown-options > button {
+  display: flex;
+  gap: 10px !important;
+}
+.dropdown-options > button:focus {
+  color: #eaecef !important;
+}
+@media (max-width: 1024px) {
+  .slide {
+    min-width: 150px !important;
+  }
+  .slide > p > button:focus {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .slide {
+    display: none !important;
+  }
+}

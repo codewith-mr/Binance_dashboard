@@ -1,0 +1,25 @@
+.container {
+  max-width: 72% !important;
+  margin-top: 45px;
+}
+.square_announcement {
+  display: flex;
+  margin: 28px 0 0 0;
+}
+@media (max-width: 1245px) {
+  .container {
+    max-width: 75% !important;
+  }
+}
+@media (max-width: 1023px) {
+  .square_announcement {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100% !important;
+    background-color: #181e25;
+  }
+}
